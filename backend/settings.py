@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework', #para la api
     'inventario', #agregamos la nueva aplicacion
 ]
 
@@ -84,15 +85,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #Esto dice que hay que reemplazar segun las intrucciones
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',   # Motor de MySQL
-        'NAME': 'veterinaria',           # Nombre de tu BD
-        'USER': 'root',                  # Usuario de MySQL
-        'PASSWORD': '',           # Contraseña
-        'HOST': 'localhost',                   # O IP del servidor MySQL
-        'PORT': '3306',                        # Puerto por defecto
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+        'ENGINE': 'django.db.backends.mysql', # O 'django.db.backends.postgresql'
+        'NAME': 'inventariodb',
+        'USER': 'root',
+        'PASSWORD': 'ayconchuda#1',
+        'HOST': 'localhost', # O la IP del servidor de BD
+        'PORT': '3306',      # O '5432' para PostgreSQL
     }
 }
 
