@@ -27,9 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -74,23 +71,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-#Esto viene por defecto
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-#Esto dice que hay que reemplazar segun las intrucciones
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # O 'django.db.backends.postgresql'
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'inventariodb',
         'USER': 'root',
         'PASSWORD': 'ayconchuda#1',
-        'HOST': 'localhost', # O la IP del servidor de BD
-        'PORT': '3306',      # O '5432' para PostgreSQL
+        'HOST': 'localhost',
+        'PORT': '3306',  
     }
 }
 

@@ -1,5 +1,3 @@
-# inventario/serializers.py
-
 from rest_framework import serializers
 from .models import Categoria, Proveedor, Producto, Movimiento
 
@@ -23,7 +21,6 @@ class MovimientoSerializer(serializers.ModelSerializer):
         model = Movimiento
         fields = '__all__'
 
-    # REQUISITO 2.1.3: Validación de stock
     def validate(self, data):
         producto = data['producto']
         cantidad = data['cantidad']

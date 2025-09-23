@@ -25,7 +25,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # Redirige cualquier ruta que empiece con 'api/' al archivo urls.py de la app inventario
+    path('admin/', admin.site.urls), #Redirige cualquier ruta que empiece con 'api/' al archivo urls.py de la app inventario
     path('api/', include('inventario.urls')),
 ]
