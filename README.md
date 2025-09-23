@@ -7,4 +7,6 @@ Estructura de la base de datos:
 Ejecucion del comando "python manage.py migrate" luego de una correcion en los modelos (Faltaba el modelo de Bodegas)
 <img width="625" height="75" alt="Captura de pantalla 2025-09-23 180139" src="https://github.com/user-attachments/assets/67b35a6d-cec0-4fe6-bd3b-e24526342557" />
 
+Profesora le ofrezco una disculpa, se que este trabajo no tiene ni pies ni cabeza, en la proxima entrega me esforzare más.
+
 
